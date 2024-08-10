@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <title>Lenz's Law</title>
+    <link href='Physics Website.css' rel='stylesheet'>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>MathJax = {tex: {inlineMath:[['$', '$'], ['\\(', '\\)']]},svg: {fontCache:'global'}};</script>
+  </head>
+
+
+  <body>
+    <a class="nav-buttons" href="./index.html">Introduction</a>
+    <a class="nav-buttons" href="./Faraday's Law.html">Faraday's Law</a>
+    <a class="nav-buttons" href="./Lenz's Law.html">Lenz's Law</a>
+    <a class="nav-buttons" href="./Practice.html">Practice</a>
+    <a class="nav-buttons" href="./Applications.html">Applications</a>
+    <a class="nav-buttons" href="./References.html">References</a>
+    
+ 
+    <h1>Lenz's Law</h1>
+        
+
+    <p>Lenz's Law is a qualitative rule that accompanies Faraday's Law. While Faraday's law determines magnitude of the EMF to be determined, Lenz's Law determines the <em>direction</em> of the EMF. There are only two ways that current can flow around an inductive loop: either clockwise or counterclockwise. Lenz's Law says that:</p>
+
+
+    <p class="equation" id="lenzlaw">"The induced EMF must point in a direction such that the magnetic field it produces inside the inductive loop must be opposite in direction to the direction of change of magnetic flux."</p>
+
+
+    <div class="centered">
+      <iframe width="300px" height="450" src="https://www.youtube.com/embed/ZfksQw7M0sE" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen">Video Unavailable</iframe>
+      <iframe width="700" height="450" src="https://www.youtube.com/embed/N7tIi71-AjA" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen">Video Unavailable</iframe>
+    </div>    
+
+
+    <p>These videos showcase the power of Lenz's Law. However, the only way to understand Lenz's Law fully is to put it into practice. Try out the following questions:</p>
+
+
+    <div class="solution">      
+      <h3>Simple Example Question</h3>
+
+      
+      <p>Imagine you have a cicular copper loop flat on the plane of a page. Initially there is a uniform magnetic field directed out of the page through the inside of the loop, but now the magnitude of that magnetic field increases. Should the current in the wire run clockwise or counterclockwise?</p>
+      
+      
+      <p class="centered"><img src="./Lenz's Law MEDIA/question_1.png"></p>
+      
+      
+      <p>Solution (hover):</p>
+
+
+      <div class="spoiler">
+         <p>We know that the induced current must produce a magnetic field inside the inductive loop that is opposite in direction to the net change in magnetic flux. Since there are only two possibilities (clockwise or counterclockwise), we simply guess-and-check one direction. If we assume that current flows counterclockwise, then logically current must flow to the left at the top (12 o'clock position) of the loop. If we then try pointing our right thumb to the left, then allow our fingers to curl according to the RHR #1 (Biot-Savart law), then in the region inside the inductive loop magnetic field points out of the page. Since the net magnetic flux change is out of the page as well, our theoretically counterclockwise current does no oppose it and is incorrect. We reason that since the current is not counterclockwise, it must run clockwise. The EMF produced must run in the same direction, and so <strong>our EMF must run clockwise.</strong></p>
+      </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="solution">
+      <h3>Advanced Example Question</h3>
+
+      
+      <p>A bar magnet, with the south side facing up, falls down an aluminum pipe. Which direction do the eddy currents flow? Account for all sections of the pipe and answer the question fully. Warning: the second diagram technically contains the answer, but try out the question by yourself first.</p>
+      
+      
+      <div class="centered"><img src="./Lenz's Law MEDIA/magnet_field_lines.png"><img src="./Lenz's Law MEDIA/pipe_problem_solution.webp"></div>
+
+
+      <p>Solution (hover):</p>
+
+
+      <div class="spoiler">
+        <p>Magnetic field lines flow out of the magnetic north pole and into the magnetic south pole. </p>
+        <p>Imagine an inductive loop in the section of pipe below the falling magnet. The north pole (which spits out magnetic field lines) is rushing towards the loop, so downward magnetic flux is increasing. Using a left hand rule: if you point your left thumb downwards, your fingers curl in the counterclockwise direction, so EMF is clockwise. Current runs in the same direction, so current is also clockwise.</p>
+        <p>Imagine an inductive loop in the section of pipe above the falling magnet. The south pole (which swallows magnetic field lines) is rushing away from the loop, so downward flux is decreasing. This means that net flux change is upwards. If you point your left thumb upwards, your fingers curl in the clockwise direction, so EMF is clockwise.</p>
+        <p>In the section of the pipe directly adjacent to the magnet, flux is quite constant. There is no EMF generated. However, existing eddy currents may still circulate.</p>
+        <p>Note that the magnet in the second diagram has its polarity reversed. If you applied charge symmetry, it would show that my solution is correct.</p>
+      </div>
+    </div>
+    
+    
+    <br>
+  </body>
+
+
+  <footer>
+    <div class="centered"><a class="nav-buttons" href="#top">Jump back to top</a></div>
+  </footer>
+</html>

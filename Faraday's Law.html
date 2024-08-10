@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <title>Faraday's Law</title>
+    <link href='Physics Website.css' rel='stylesheet'>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>MathJax = {tex: {inlineMath:[['$', '$'], ['\\(', '\\)']]},svg: {fontCache:'global'}};</script>
+  </head>
+
+
+  <body>
+    <a class="nav-buttons" href="./index.html">Introduction</a>
+    <a class="nav-buttons" href="./Faraday's Law.html">Faraday's Law</a>
+    <a class="nav-buttons" href="./Lenz's Law.html">Lenz's Law</a>
+    <a class="nav-buttons" href="./Practice.html">Practice</a>
+    <a class="nav-buttons" href="./Applications.html">Applications</a>
+    <a class="nav-buttons" href="./References.html">References</a>
+  
+
+    <h1>Faraday's Law</h1>
+    
+
+    <div class="equation">\[\varepsilon = -N \frac{\mathrm{d} \Phi}{\mathrm{d} t}\]</div>
+
+
+    <p>Faraday's law in its derivative form is shown above. Let's analyze in further detail each part of this equation.</p>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">&nbsp;Symbol&nbsp;</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="centered">$\varepsilon$</td>
+              <td>Refers to the EMF, or electromagnetic force (it is not a real force). In Faraday's law, the EMF refers specifically to the potential difference (almost like voltage) produced by the changing external magnetic field. EMF is measured in units of volts (V). One volt equals to one joule of energy carried per coulomb of charge.</td>
+            </tr>
+            <tr>
+              <td class="centered">$\Phi$</td>
+              <td>Refers to the magnetic flux. Magnetic flux is measured in units of webers (Wb). One weber of magnetic flux is equal to one square meter of area being permeated by one Tesla of uniform magnetic field.</td>
+            </tr>
+            <tr>
+              <td class="centered">N</td>
+              <td>Refers to the number of wire coil loops around the area A. N has no units and is just an integer.</td>
+            </tr>
+            <tr>
+              <td class="centered">t</td>
+              <td>Refers to time, according to SI standards. Time is measured in seconds.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p>
+      Faraday's Law states that whenever the magnetic flux through a loop of conductor material (like wire) is changing, an EMF will be induced by the wire. An EMF is a potential difference, or energy gradient similar to voltage, in the circuit loop that can cause a voltage to be present and current to run. The magnitude of that EMF is the rate of change of magnetic flux through the loop. 
+    </p>
+    
+
+    <p>When finding the induced EMF, you will often need to find a formula for magnetic flux first. In most circumstances, you simply apply the dot product integral of magnetic field strength with respect to area: $\Phi = \int \vec{B} \cdot \mathrm{d} \vec{A}$. If magnetic field strength is constant throughout the 2D surface, use the simpler algebraic formula: $\Phi = BA \cos(\theta)$. The definition of magnetic flux is often useful too, and should be remembered: $ \mathrm{d} \Phi = B \;\mathrm{d} A $. After differentiating the function of magnetic flux with respect to time, you will get the magnitude of the EMF.</p>
+
+
+    <p>The coil you use for evaluation the EMF can be any closed loop in 3D space. However, unless you want to do an unnecessarily complex surface, it is best to make the loop a simple 2D shape. The area vector is the normal of the inductive loop area. Remember that when the magnetic field lines are parallel to the normal of the surface, the dot product, and therefore the flux, is maximized.</p>
+
+
+    <p>It should be noted that there is <em>no voltage/potential difference</em> between any two points around the loop. Instead, the changing magnetic flux causes a continuous voltage gradient around the wire, and a <em>magnetic force</em> to be applied on each charge. Similar to how accelerating charges create an increasing magnetic flux around them, an increasing magnetic flux around charges accelerates them. There is an equation similar to $\Delta V = \int \vec{E} \cdot \mathrm{d} x$ for induced EMF, but it is a closed integral around the closed loop that is the perimeter of </p>
+
+
+    <div class="equation">\[\varepsilon = \oint \vec{E} \cdot \mathrm{d} \vec{l}\]</div>
+    
+
+    <p>Important Notes:</p>
+    <ul>
+      <li>In many cases, your coil of wire/conductor will only make one loop. In this case, $N = 1$ and so Faraday's law simplifies to $\varepsilon = - \frac{\mathrm{d} \Phi}{\mathrm{d} t}$.</li>
+      <li>Yes, induction does violate Kirchoff's voltage law (KVL) since you are generating a potential difference from outside the circuit. KVL only works under the assumption that there is no changing magnetic field.</li>
+      <li>Maxwell later proved that a changing magnetic field produces an electric field and that a changing electric field reproduces a magnetic field by deriving the wave equation for this phenomenon from Ampere's and Faraday's laws. Such a wave is called an electromagnetic wave and travels at the speed of light.</li>
+      <li>Magnetic fields are a result of electric fields and special relativity. The magnetic force is a ficticious force, similar to the centrifugal force. Refer to Veritasium's <a target="_blank" href="https://www.youtube.com/watch?v=1TKSfAkWWN0">How Special Relativity Makes Magnets Work</a>.</li>
+    </ul>
+
+
+    <p>Finally, just a heads up note for Ampere-Maxwell Law in the future. Faraday's Law gives you that $\oint \vec{E} \cdot \mathrm{d} \vec{l} = - \frac{\mathrm{d} \Phi_B}{\mathrm{d} t}$. The Ampere-Maxwell Law is similar, $\oint \vec{B} \cdot \mathrm{d} \vec{l} = \mu_0 I + \mu_0 \varepsilon_0 \frac{\mathrm{d} \Phi_E}{\mathrm{d} t}$. Notice that if you ignore the constant ($\mu_0 I$), the two equations just switch electric and magnetic field variables. This is because the two fields propagate each other as an electromagnetic wave.</p>
+
+
+    <br>
+
+
+    <!--
+    
+    <div class="solution">
+      <h3>Simple Example Question</h3>
+
+      <p></p>
+    </div>
+
+    <br>
+    
+    -->
+
+
+    <div class="solution">
+      <h3>Advanced Example Question</h3>
+      
+      
+      <p>A supercooled, circular loop of wire with a radius of 0.10 meters has a uniform magnetic field through its middle, slanted 60 degrees from the normal of the surface. The magnitude of the uniform magnetic field, in tesla, oscillates as a function with respect to time: $B(t) = 5(1-0.7^{t})$. The resistance in the wire is 4 ohms.</p>
+      <p>(a) Find the function of the absolute value of EMF.</p> 
+      <p>(b) Find the power output at time $t = 1s$.</p>
+      
+      
+      <div class="centered"><img src="./Faraday's Law MEDIA/inductive_loop.png" alt="AP_phys_C"></div>
+    
+      <p>Solution (hover):</p>
+      
+
+      <p>(a) This is a pure math/derivative problem. Simply start with the equation first:</p>
+
+      <span>\[  \varepsilon  =  -N  \frac{\mathrm{d} \Phi}{\mathrm{d} t}  \]</span>
+      <span>\[  \varepsilon  =  -(1)  \frac{\mathrm{d}}{\mathrm{d}t}  \left[  B(t)  A  \cos{(\theta)}  \right]  \]</span>
+
+
+      <p>Area and the dot product cosine coefficient are constants, and can be factored out of the derivative:</p>
+
+
+      <span>\[  \varepsilon  =  -\cos{(60^{\circ})}  \pi (0.01)^{2}  \frac{\mathrm{d}}{\mathrm{d}t}  \left[  5(1-0.7^{-t})  \right]  \]</span>
+
+
+      <p>The 5 can be factored out, and the constant inside the derivative can be eliminated:</p>
+
+
+      <span>\[  \varepsilon  =  -5\cos{(60^{\circ})}  \pi (0.01)^{2}  \frac{\mathrm{d}}{\mathrm{d}t}  \left[  -0.7^{-t}  \right]  \]</span>
+      <span>\[  \varepsilon  =  \left[  -5\cos{(60^{\circ})}  \pi (0.01)^{2}  \ln(0.7)  \right]  e^{-t}  \]</span>
+      <span>\[  \therefore \varepsilon(t)  =  \left[  0.028 \right] e^{-t}  \]</span>
+
+
+      <p>(b) To find power, simply use Joule's Law:</p>
+
+      <span>\[  P  =  IV  =  \frac{V^{2}}{R}  \]</span>
+      <span>\[  P  =  \frac{\varepsilon(t)^{2}}{R}  \]</span>
+
+      <p>Plug and chug variables into the formula, replacing voltage with EMf without compromise. Remember that $t=1s$.</p>
+
+      <span>\[  P(1)  =  \frac{\varepsilon(1)^{2}}{R}  \]</span>
+      <span>\[  P(1)  =  \frac{(0.28  \times  e^-1)^{2}}{4}  \]</span>
+      <span>\[  \therefore  P(1)  =  2.7 \times 10^{-3} \mathrm{W}  \]</span>
+    </div>
+
+
+    <br>
+  </body>
+
+
+  <footer>
+    <div class="centered"><a class="nav-buttons" href="#top">Jump back to top</a></div>
+  </footer>
+
+
+</html>

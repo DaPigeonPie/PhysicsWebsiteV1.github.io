@@ -1,0 +1,142 @@
+/* Basic Styling background-image: url('./Introduction MEDIA/360_F_60040805_v44hUlIYziuW0jHXhyFASqI71ONkxGJi.jpg');*/
+
+* {
+  box-sizing: border-box;
+}
+
+br {
+  border: 1px solid black;
+}
+
+body {
+  background-color: rgb(231, 202, 132);
+}
+
+h1, h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  color: black;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+h1 {font-size: 40px;}
+h2, h3 {font-size: 30px;}
+
+p, ul, ol, span {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+span {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  height: 350px;
+  margin: 0px 30px;
+}
+
+iframe {
+  border: 4px solid red;
+  height: 450px;
+  margin: 10px 30px;
+}
+
+a {
+  font-size: 20px;
+}
+
+
+
+.equation {
+  background-color: lightgreen;
+  border: 5px solid forestgreen;
+  font-size: 40px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#lenzlaw {
+  padding: 20px;
+}
+
+
+
+div.solution {
+  background-color: lightblue;
+  border: 5px solid turquoise;
+  border-radius: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.spoiler {
+  background-color: tan;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.spoiler p {
+ color: tan;
+ width: 100%;
+}
+div.spoiler:hover, div.spoiler:hover p {
+  background-color: lightblue;
+  color: black;
+}
+
+
+
+a.nav-buttons {
+  font-size: 26px;
+  color: rgb(147, 74, 45);
+  border: 5px solid rgb(147, 74, 45);
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1px 4px;
+  margin: 3px 0px 3px;
+}
+a.nav-buttons:hover, a.move-buttons:hover{
+  color: rgb(231, 202, 132);
+  background-color: rgb(147, 74, 45);
+}
+
+
+
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Table Styling */
+
+table {
+  color: black;
+  border-collapse: collapse;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead {
+  font-size: 22px;
+  text-align: center;
+}
+
+tbody {
+  font-size: 22px;
+  text-align: left;
+}
+
+td, th {
+  border: 2px solid black;
+  padding: 5px 5px;
+}
