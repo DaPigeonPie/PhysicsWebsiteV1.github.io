@@ -2,30 +2,29 @@
 
 * {
   box-sizing: border-box;
-}
-
-br {
-  border: 1px solid black;
+  border: 0px solid black;
+  font-family: Arial, Verdana, sans-serif;
+  z-index: 5;
 }
 
 body {
   background-color: rgb(231, 202, 132);
+  margin: 0;
 }
 
-h1, h3 {
+h1, h2, h3 {
   font-family: Georgia, 'Times New Roman', Times, serif; 
   color: black;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
-h1 {font-size: 40px;}
-h2, h3 {font-size: 30px;}
+h1 {font-size: 40px; text-align: center; margin: 10px; color: rgb(82, 41, 25);}
+h2 {font-size: 30px; text-align: left;}
+h3 {font-size: 30px; text-align: center;}
 
 p, ul, ol, span {
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
   color: black;
   width: 95%;
   margin-left: auto;
@@ -77,13 +76,13 @@ div.solution {
   margin-right: auto;
 }
 div.spoiler {
-  background-color: tan;
+  background-color: lavenderblush;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
 div.spoiler p {
- color: tan;
+ color: lavenderblush;
  width: 100%;
 }
 div.spoiler:hover, div.spoiler:hover p {
@@ -93,15 +92,26 @@ div.spoiler:hover, div.spoiler:hover p {
 
 
 
-a.nav-buttons {
+a.nav-buttons {  
+  color: rgb(133, 66, 40);
   font-size: 26px;
-  color: rgb(147, 74, 45);
-  border: 5px solid rgb(147, 74, 45);
-  display: inline-block;
-  text-decoration: none;
   font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+
+  letter-spacing: 0;
+  word-spacing: 0;
+  line-height: 1em;
+  text-align: center;
+
+  background-color: transparent;
   padding: 1px 4px;
-  margin: 3px 0px 3px;
+  border: 8px ridge rgb(175, 89, 55);
+  border-radius: 0px;
+  margin: 0px 0px 10px;
+
+  display: inline-block;
 }
 a.nav-buttons:hover, a.move-buttons:hover{
   color: rgb(231, 202, 132);
@@ -114,6 +124,15 @@ a.nav-buttons:hover, a.move-buttons:hover{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0px;
+  background-color: hsl(42, 58.8%, 62.0%);
+  width: 100%;
+  z-index: 10;
+  border-bottom: 6px inset rgb(186, 94, 58);
 }
 
 /* Table Styling */
