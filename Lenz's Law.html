@@ -3,10 +3,12 @@
 
 
   <head>
+    <meta charset="utf-8">
     <title>Lenz's Law</title>
     <link href='Physics Website.css' rel='stylesheet'>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script>MathJax = {tex: {inlineMath:[['$', '$'], ['\\(', '\\)']]},svg: {fontCache:'global'}};</script>
+    <script src="./Physics Website.js"></script>
   </head>
 
 
@@ -18,7 +20,9 @@
       <a class="nav-buttons" href="./Lenz's Law.html">Lenz's Law</a>
       <a class="nav-buttons" href="./Practice.html">Practice</a>
       <a class="nav-buttons" href="./Applications.html">Applications</a>
-      <a class="nav-buttons" href="./References.html">References</a>
+      <a class="nav-buttons" href="./References.html">References/Credits</a>
+      <a class="nav-buttons" id="darkbutton">Dark Mode</a>
+      <script>document.getElementById("darkbutton").onclick = function(){ToggleMode()};</script>
     </nav>
     <br><br><br><br><br><br><br><br>
         
@@ -48,14 +52,13 @@
       <p class="centered"><img src="./Lenz's Law MEDIA/question_1.png"></p>
       
       
-      <p>Solution (hover):</p>
-
-
-      <div class="spoiler">
-         <p>We know that the induced current must produce a magnetic field inside the inductive loop that is opposite in direction to the net change in magnetic flux. Since there are only two possibilities (clockwise or counterclockwise), we simply guess-and-check one direction. If we assume that current flows counterclockwise, then logically current must flow to the left at the top (12 o'clock position) of the loop. If we then try pointing our right thumb to the left, then allow our fingers to curl according to the RHR #1 (Biot-Savart law), then in the region inside the inductive loop magnetic field points out of the page. Since the net magnetic flux change is out of the page as well, our theoretically counterclockwise current does no oppose it and is incorrect. We reason that since the current is not counterclockwise, it must run clockwise. The EMF produced must run in the same direction, and so <strong>our EMF must run clockwise.</strong></p>
+      <h4 id="button3_1">Show Solution <i class="arrow right"></i></h4>
+      <div class="answer" id="answer3_1">
+        <p>We know that the induced current must produce a magnetic field inside the inductive loop that is opposite in direction to the net change in magnetic flux. Since there are only two possibilities (clockwise or counterclockwise), we simply guess-and-check one direction. If we assume that current flows counterclockwise, then logically current must flow to the left at the top (12 o'clock position) of the loop. If we then try pointing our right thumb to the left, then allow our fingers to curl according to the RHR #1 (Biot-Savart law), then in the region inside the inductive loop magnetic field points out of the page. Since the net magnetic flux change is out of the page as well, our theoretically counterclockwise current does no oppose it and is incorrect. We reason that since the current is not counterclockwise, it must run clockwise. The EMF produced must run in the same direction, and so <strong>our EMF must run clockwise.</strong></p>
       </div>
+      <script>document.getElementById("button3_1").onclick = function(){ToggleDisplay("button3_1", "answer3_1")};</script>
     </div>
-
+    
 
     <br>
 
@@ -70,16 +73,15 @@
       <div class="centered"><img src="./Lenz's Law MEDIA/magnet_field_lines.png"><img src="./Lenz's Law MEDIA/pipe_problem_solution.webp"></div>
 
 
-      <p>Solution (hover):</p>
-
-
-      <div class="spoiler">
+      <h4 id="button2">Show Solution <i class="arrow right"></i></h4>
+      <div class="answer" id="answer2">
         <p>Magnetic field lines flow out of the magnetic north pole and into the magnetic south pole. </p>
         <p>Imagine an inductive loop in the section of pipe below the falling magnet. The north pole (which spits out magnetic field lines) is rushing towards the loop, so downward magnetic flux is increasing. Using a left hand rule: if you point your left thumb downwards, your fingers curl in the counterclockwise direction, so EMF is clockwise. Current runs in the same direction, so current is also clockwise.</p>
         <p>Imagine an inductive loop in the section of pipe above the falling magnet. The south pole (which swallows magnetic field lines) is rushing away from the loop, so downward flux is decreasing. This means that net flux change is upwards. If you point your left thumb upwards, your fingers curl in the clockwise direction, so EMF is clockwise.</p>
         <p>In the section of the pipe directly adjacent to the magnet, flux is quite constant. There is no EMF generated. However, existing eddy currents may still circulate.</p>
         <p>Note that the magnet in the second diagram has its polarity reversed. If you applied charge symmetry, it would show that my solution is correct.</p>
       </div>
+      <script>document.getElementById("button2").onclick = function(){ToggleDisplay("button2", "answer2")};</script>
     </div>
     
     

@@ -1,16 +1,17 @@
-/* Basic Styling background-image: url('./Introduction MEDIA/360_F_60040805_v44hUlIYziuW0jHXhyFASqI71ONkxGJi.jpg');*/
-
+/* Basic Styling */
 * {
   box-sizing: border-box;
-  border: 0px solid black;
+  border: none;
   font-family: Arial, Verdana, sans-serif;
   z-index: 5;
 }
+
 
 body {
   background-color: rgb(231, 202, 132);
   margin: 0;
 }
+
 
 h1, h2, h3 {
   font-family: Georgia, 'Times New Roman', Times, serif; 
@@ -19,9 +20,28 @@ h1, h2, h3 {
   margin-left: auto;
   margin-right: auto;
 }
-h1 {font-size: 40px; text-align: center; margin: 10px; color: rgb(82, 41, 25);}
-h2 {font-size: 30px; text-align: left;}
-h3 {font-size: 30px; text-align: center;}
+h1 {
+  font-size: 40px; 
+  text-align: center; 
+  margin: 10px; 
+  color: rgb(82, 41, 25);
+}
+h2 {
+  font-size: 30px; 
+  text-align: left;
+}
+h3 {
+  font-size: 30px; 
+  text-align: center;
+}
+h4 {
+  color: rgb(115, 0, 17);
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 2.5%;
+}
+
 
 p, ul, ol, span {
   font-size: 22px;
@@ -36,21 +56,20 @@ span {
   margin-right: auto;
 }
 
+
 img {
   height: 350px;
   margin: 0px 30px;
+  background-color: white;
 }
-
 iframe {
   border: 4px solid red;
   height: 450px;
   margin: 10px 30px;
 }
 
-a {
-  font-size: 20px;
-}
 
+/* Classes Format Styling */
 
 
 .equation {
@@ -67,7 +86,7 @@ a {
 
 
 
-div.solution {
+.solution {
   background-color: lightblue;
   border: 5px solid turquoise;
   border-radius: 50px;
@@ -75,24 +94,13 @@ div.solution {
   margin-left: auto;
   margin-right: auto;
 }
-div.spoiler {
-  background-color: lavenderblush;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-div.spoiler p {
- color: lavenderblush;
- width: 100%;
-}
-div.spoiler:hover, div.spoiler:hover p {
-  background-color: lightblue;
-  color: black;
+.answer {
+  display: none;
 }
 
 
 
-a.nav-buttons {  
+.nav-buttons {  
   color: rgb(133, 66, 40);
   font-size: 26px;
   font-weight: bold;
@@ -113,11 +121,13 @@ a.nav-buttons {
 
   display: inline-block;
 }
-a.nav-buttons:hover, a.move-buttons:hover{
+.nav-buttons:hover {
   color: rgb(231, 202, 132);
   background-color: rgb(147, 74, 45);
 }
 
+
+/* Classes Position Styling */
 
 
 .centered {
@@ -126,7 +136,8 @@ a.nav-buttons:hover, a.move-buttons:hover{
   margin-right: auto;
 }
 
-nav.fixed {
+
+.fixed {
   position: fixed;
   top: 0px;
   background-color: hsl(42, 58.8%, 62.0%);
@@ -135,7 +146,9 @@ nav.fixed {
   border-bottom: 6px inset rgb(186, 94, 58);
 }
 
+
 /* Table Styling */
+
 
 table {
   color: black;
@@ -144,18 +157,42 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-
 thead {
   font-size: 22px;
   text-align: center;
 }
-
 tbody {
   font-size: 22px;
   text-align: left;
 }
-
 td, th {
   border: 2px solid black;
   padding: 5px 5px;
+}
+
+
+/* Arrow Styles */
+
+
+.arrow {
+  border: solid;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

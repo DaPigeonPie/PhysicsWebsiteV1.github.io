@@ -3,10 +3,12 @@
 
 
   <head>
+    <meta charset="utf-8">
     <title>Introduction</title>
     <link href='Physics Website.css' rel='stylesheet'>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script>MathJax = {tex: {inlineMath:[['$', '$'], ['\\(', '\\)']]},svg: {fontCache:'global'}};</script>
+    <script src="./Physics Website.js"></script>
   </head>
 
 
@@ -18,7 +20,9 @@
       <a class="nav-buttons" href="./Lenz's Law.html">Lenz's Law</a>
       <a class="nav-buttons" href="./Practice.html">Practice</a>
       <a class="nav-buttons" href="./Applications.html">Applications</a>
-      <a class="nav-buttons" href="./References.html">References</a>
+      <a class="nav-buttons" href="./References.html">References/Credits</a>
+      <a class="nav-buttons" id="darkbutton">Dark Mode</a>
+      <script>document.getElementById("darkbutton").onclick = function(){ToggleMode()};</script>
     </nav>
     <br><br><br><br><br><br><br><br>
 
@@ -30,6 +34,7 @@
 
 
     <p><em>Michael Faraday</em> (1791-1867) was an English physicist and inventor. He was a great scientist who contributed greatly to our early understanding of electricity and magnetism. Faraday (left) was most famous for his research on diamagnetism and the discovery of electrolysis and electromagnetic induction.</p>
+
 
     <div class="centered">
       <img src="./Introduction MEDIA/Faraday Portrait.webp" alt="Portrait of Michael Faraday" height="350">
