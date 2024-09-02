@@ -19,7 +19,7 @@
       <a class="nav-buttons" href="./Faraday's Law.html">Faraday's Law</a>
       <a class="nav-buttons" href="./Lenz's Law.html">Lenz's Law</a>
       <a class="nav-buttons" href="./Practice.html">Practice</a>
-      <a class="nav-buttons" href="./Applications.html">Applications</a>
+      <a class="nav-buttons" href="./Enrichment.html">Enrichment</a>
       <a class="nav-buttons" href="./References.html">References/Credits</a>
       <a class="nav-buttons" id="darkbutton">Dark Mode</a>
       <script>document.getElementById("darkbutton").onclick = function(){ToggleMode()};</script>
@@ -27,7 +27,7 @@
     <br><br><br><br><br><br><br><br>
     
 
-    <div class="equation">\[\varepsilon = -N \frac{\mathrm{d} \Phi}{\mathrm{d} t}\]</div>
+    <div class="equation"><span class="bigEquation">\[\varepsilon = -N \frac{\mathrm{d} \Phi}{\mathrm{d} t}\]</span></div>
 
 
     <p>Faraday's law in its derivative form is shown above. Let's analyze in further detail each part of this equation.</p>
@@ -87,10 +87,10 @@
     <p>If magnetic field varies, you must integrate the flux: $\Phi = \int \vec{B} \cdot \mathrm{d} \vec{A}$. Also remember $ \mathrm{d} \vec{\Phi_{B}} = \vec{B} \cdot \mathrm{d} \vec{A} $.
 
 
-    <p>Finally, just know that you can also think of magnetic flux as the "total amount of magnetic field lines" going through a 2D surface. And after you get your magnetic flux function, Faraday's law states that its derivative is the function for magnitude of the EMF. For power, use Joule's law: $P = I\varepsilon = I^{2}R = \frac{\varepsilon^{2}}{R}$.</p>
+    <div class="equation"><span class="bigEquation">\[     \Phi_{B} = \vec{B} \cdot \vec{A} = BA\cos{(\theta)} = \int \vec{B} \cdot \mathrm{d} \vec{A} = \int B \cos{(\theta)} \mathrm{d}A     \]</span></div>
 
 
-    <div class="equation">\[     \Phi_{B} = \vec{B} \cdot \vec{A} = BA\cos{(\theta)} = \int \vec{B} \cdot \mathrm{d} \vec{A} = \int B \cos{(\theta)} \mathrm{d}A     \]</div>
+    <p>Finally, keep in mind that you can also think of magnetic flux as the "total amount of magnetic field lines" going through a 2D surface. And after you get your magnetic flux function, Faraday's law states that its derivative is the function for magnitude of the EMF. For power, use Joule's law: $P = I\varepsilon = I^{2}R = \frac{\varepsilon^{2}}{R}$.</p>
 
 
     <h2>Defining the Inductive Loop</h2>
@@ -101,7 +101,7 @@
     <p>It should be noted that the induced EMF produced by a changing magnetic field produces a continuous EMF around the circuit. Unlike in the case of electrical voltage, there is no net potential energy difference between any two points on the circuit. A magnetic force is applied on each electron. Similar to how accelerating charges create an increasing magnetic flux around them, an increasing magnetic flux around charges accelerates them. Voltage and induced EMF are both EMFs, so the line integral of induced EMF around the circuit perimeter is similar to that of voltage, $\Delta V = \int \vec{E} \cdot \mathrm{d} x$</p>
 
 
-    <div class="equation">\[\varepsilon = \oint \vec{E} \cdot \mathrm{d} \vec{l}\]</div>
+    <div class="equation"><span class="bigEquation">\[\varepsilon = \oint \vec{E} \cdot \mathrm{d} \vec{l}\]</span></div>
     
 
     <h2>Important Notes:</h2>
@@ -175,7 +175,7 @@
         <span>\[  P  =  IV  =  \frac{V^{2}}{R}  \]</span>
         <span>\[  P  =  \frac{\varepsilon(t)^{2}}{R}  \]</span>
 
-        <p>Plug and chug variables into the formula, replacing voltage with EMf without compromise. Remember that $t= 1\mathrm{s}$.</p>
+        <p>Plug and chug variables into the formula, replacing voltage with EMF without compromise. Remember that $t= 1\mathrm{s}$.</p>
 
         <span>\[  P(1)  =  \frac{\varepsilon(1)^{2}}{R}  \]</span>
         <span>\[  P(1)  =  \frac{(0.28  \times  e^-1)^{2}}{4}  \]</span>

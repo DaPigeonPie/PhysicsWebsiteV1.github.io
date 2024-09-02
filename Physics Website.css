@@ -6,7 +6,6 @@
   z-index: 5;
 }
 
-
 body {
   background-color: rgb(231, 202, 132);
   margin: 0;
@@ -75,10 +74,12 @@ iframe {
 .equation {
   background-color: lightgreen;
   border: 5px solid forestgreen;
-  font-size: 40px;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+}
+.bigEquation {
+  font-size: 40px;
 }
 #lenzlaw {
   padding: 20px;

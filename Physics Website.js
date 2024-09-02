@@ -43,6 +43,7 @@ function ToggleDisplay(buttonID, answerID) {
 
 function ToggleMode() {
     userSettingsDeserialized = JSON.parse(localStorage.getItem("US"));
+    console.log(userSettingsDeserialized);
     
     if (userSettingsDeserialized.darkmode == true) {
         userSettings.darkmode = false;
@@ -76,6 +77,9 @@ function SetMode() {
         for (a of as) {a.style.color = 'goldenrod';}
         for (td of tds) {td.style.color = 'white';}
         for (th of ths) {th.style.color = 'white';}
+        for (td of tds) {td.style.borderColor = 'white';}
+        for (th of ths) {th.style.borderColor = 'white';}
+
     } else {
         document.body.style.backgroundColor = '';
         document.querySelector('.fixed').style.backgroundColor = '';
