@@ -146,7 +146,24 @@ iframe {
   z-index: 10;
   border-bottom: 6px inset rgb(186, 94, 58);
 }
+#cookieAlert {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  background-color: hsl(42, 58.8%, 62.0%);
+  border-top: 6px inset rgb(186, 94, 58);
+  display: none;
+}
+#cookieAlertButton {
+  display: inline;
+  height: 30px;
 
+}
+.inline {
+  display: inline;
+}
 
 /* Table Styling */
 

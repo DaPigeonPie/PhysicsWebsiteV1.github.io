@@ -1,3 +1,5 @@
+/*localStorage.clear();*/
+
 const h1s = document.getElementsByTagName("h1");
 const h2s = document.getElementsByTagName("h2");
 const h3s = document.getElementsByTagName("h3");
@@ -24,6 +26,7 @@ window.onload = function() {
         userSettingsSerialized = JSON.stringify(userSettings);
         localStorage.setItem("US", userSettingsSerialized);
         localStorage.setItem("runAvailable", false);
+        document.getElementById("cookieAlert").style.display = "block";
     }  else {
         console.log("already ran once, won't run again");
     }
@@ -64,6 +67,7 @@ function SetMode() {
     if (userSettingsDeserialized.darkmode == true) {
         document.body.style.backgroundColor = 'black';
         document.querySelector('.fixed').style.backgroundColor = 'black';
+        document.getElementById("cookieAlert").style.backgroundColor = 'black';
         for (i = 0; i < solutions.length; i++) {solutions[i].style.backgroundColor = 'navy'; solutions[i].style.borderColor = 'blue';}
         for (i = 0; i < equations.length; i++) {equations[i].style.backgroundColor = 'darkgreen';}
         for (h1 of h1s) {h1.style.color = 'white';}
@@ -83,6 +87,7 @@ function SetMode() {
     } else {
         document.body.style.backgroundColor = '';
         document.querySelector('.fixed').style.backgroundColor = '';
+        document.getElementById("cookieAlert").style.backgroundColor = '';
         for (i = 0; i < solutions.length; i++) {solutions[i].style.backgroundColor = ''; solutions[i].style.borderColor = '';}
         for (i = 0; i < equations.length; i++) {equations[i].style.backgroundColor = '';}
         for (h1 of h1s) {h1.style.color = '';}
@@ -94,7 +99,11 @@ function SetMode() {
         for (ul of uls) {ul.style.color = '';}
         for (span of spans) {span.style.color = '';}
         for (a of as) {a.style.color = '';}
-        for (td of tds) {td.style.color = '';}
-        for (th of ths) {th.style.color = '';}
+        for (td of tds) {td.style.borderColor = '';}
+        for (th of ths) {th.style.borderColor = '';}
     }
+}
+
+function cookieAlertRemove() {
+    document.getElementById("cookieAlert").style.display = "none";
 }

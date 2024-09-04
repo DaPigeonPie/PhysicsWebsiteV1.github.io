@@ -24,6 +24,13 @@
       <a class="nav-buttons" id="darkbutton">Dark Mode</a>
       <script>document.getElementById("darkbutton").onclick = function(){ToggleMode()};</script>
     </nav>
+    <div id="cookieAlert">
+      <p>This website uses simple cookies for functionality. Javascript web cookies are key-value data sets that are stored on your hard drive for a set period of time. They are commonly used to save user preferences. For example, on this website, a <em>userSettings</em> object stores your last dark or light mode preference in JavaScript's <em>localStorage</em>. Although cookies are often seen as annoying, they are highly useful; without cookies, you cannot autofill or return to a website you used previously without everything being reset all over again. And using cookies, this website knows not to show you this message every again - or until it expires.</p>
+      <p class="inline" style="margin-left: 2.5%">Anyways, by continuing on this webpage, you consent to these <em>functional</em> cookies.</p>
+      <button id="cookieAlertButton">Continue</button>
+      <script>document.getElementById("cookieAlertButton").onclick = function(){cookieAlertRemove()};</script>
+      <p></p>
+    </div>
     <br><br><br><br><br><br><br><br>
 
 
