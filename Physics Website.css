@@ -55,6 +55,10 @@ span {
   margin-right: auto;
 }
 
+a {
+  margin-left: 2.5%;
+  font-size: 22px;
+}
 
 img {
   height: 350px;

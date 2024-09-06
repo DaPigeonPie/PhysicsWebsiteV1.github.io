@@ -101,6 +101,8 @@ function SetMode() {
         for (a of as) {a.style.color = '';}
         for (td of tds) {td.style.borderColor = '';}
         for (th of ths) {th.style.borderColor = '';}
+        for (td of tds) {td.style.color = '';}
+        for (th of ths) {th.style.color = '';}
     }
 }
 

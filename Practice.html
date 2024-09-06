@@ -36,14 +36,58 @@
 
     <div class="solution">
       <h2 class="centered">Challenge Question 1</h2>
-      <p>A square coil of copper wire, with 12 loops and diameter 0.25 meters, is rotating inside a solenoid at an angular velocity of 60 revolutions per minute. The strength of the magnetic field is a uniform 2 Tesla, and the square coil is rotating with its axis of rotation perpendicular to the magnetic field lines such that the EMF oscillates between peak power and zero power. Initially, the normal of the wire loop area is parallel to the magnetic field lines. The linear resistivity of the copper coil is 18 ohms per meter of wire at SATP.</p>
+      <p>A square coil of copper wire, with 12 loops and diameter 0.25 meters, is rotating inside a solenoid at an angular velocity of 1200 revolutions per minute. The strength of the magnetic field is a uniform 2 Tesla, and the square coil is rotating with its axis of rotation perpendicular to the magnetic field lines such that the EMF oscillates between peak power and zero power. Initially, the normal of the wire loop area is parallel to the magnetic field lines. The linear resistivity of the copper coil is 18 ohms per meter of wire at SATP.</p>
       <p>(a) Find the function of EMF with respect to time.</p>
-      <p>(b) Find the function of power with respect to time.</p>
+      <p>(b) Find the direction of induced EMF.</p>
+      <p>(c) Find the function of power with respect to time.</p>
       
 
       <div class="centered"><img src="./Practice MEDIA/generator_problem.png"></div>
 
 
+      <h4 id="button4_1">Show Solution <i class="arrow right"></i></h4>
+      <div class="answer" id="answer4_1">
+        <p>(a) Faraday's Law states that the magnitude of induced EMF is equal to the derivative of magnetic flux. But first, we need to find the function for magnetic flux using the flux formula:</p>
+
+
+        <span>\[  \Phi_{B} = \vec{B} \cdot \vec{A} = BA \cos{(\theta)}  \]</span>
+
+
+        <p>First consider that the loop is a 0.25-meter-wide square. The magnetic field inside the solenoid is a constant 2 Tesla. Finally, the angular velocity is 1200 revolutions per minute, giving us a revolution period of 0.05 seconds. Now we can construct our formula for magnetic flux:</p>
+
+        
+        <span>\[  \omega T = 2\pi \Rightarrow \omega = \frac{2\pi}{T} \]</span>
+
+
+        <span>\[   \omega = \frac{2\pi}{0.05} = 40 \pi \]</span>
+
+
+        <p>There is an easier way:</p>
+
+
+        <span>\[   \omega = (2 \pi) \frac{1200}{60} = 40 \pi \]</span>
+
+
+        <p>Now that we have angular velocity, we just plug into the flux formula. Note that since </p>
+        
+        
+        <span>\[  \Phi_{B} = BA \cos{(\theta)}  \]</span>
+
+
+        <span>\[  \Phi_{B} = (2)(0.25)^{2} \cos{(40 \pi t)} = 0.125 \cos{(40 \pi t)}  \]</span>
+
+
+        <p>Apply Faraday's Law to find induced EMF magnitude:</p>
+
+
+        <span>\[  \varepsilon_{induced} = \frac{\mathrm{d} \Phi_{B}}{\mathrm{d} t} = \frac{\mathrm{d}}{\mathrm{d} t} (0.125 \cos{(40 \pi t)}) \]</span>
+
+
+        <span>\[  \varepsilon_{induced} = (0.125) (40 \pi) \cos{(40 \pi t)}) \]</span>
+      </div>
+      <script>document.getElementById("button4_1").onclick = function(){ToggleDisplay("button4_1", "answer4_1")};</script>
+
+    
       <h3>In Development. Coming Soon!</h2>
 
 
@@ -52,6 +96,7 @@
 
 
   <footer>
+    <br>
     <div class="centered"><a class="nav-buttons" href="#top">Jump back to top</a></div>
   </footer>
 
